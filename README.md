@@ -1,29 +1,94 @@
-# Job Portal JSP/Servlet Project
+# Job Portal Application
 
-This project scaffolds a two-sided job portal using `JSP + Servlet + JDBC + MySQL`.
+## Overview
 
-## Modules
+The Job Portal Application is a full-stack web application developed using Java, Spring Boot, JSP, Hibernate, and MySQL. The platform connects job seekers and recruiters by providing a centralized system for job posting, job searching, and application management.
 
-- Candidate flow: register, login, search/filter jobs, view details, apply with resume upload
-- Recruiter flow: login, post jobs, view applications received for posted jobs
-- Database design: `users`, `jobs`, `applications`, `skills`, `job_skills`
+## Features
 
-## Setup
+### Job Seeker Module
 
-1. Create the MySQL schema using `src/main/resources/database/schema.sql`.
-2. Update DB settings with environment variables if needed:
-   `JOB_PORTAL_DB_URL`
-   `JOB_PORTAL_DB_USER`
-   `JOB_PORTAL_DB_PASSWORD`
-3. Build as a WAR with Maven and deploy to Tomcat 10+.
+* User Registration and Login
+* Profile Management
+* Browse Available Jobs
+* Search and Filter Jobs
+* Apply for Jobs
+* Track Job Applications
 
-## Seed Admin
+### Recruiter Module
 
-- Email: `admin@jobportal.com`
-- Password hash is pre-seeded in SQL for the literal password: `admin123`
+* Recruiter Registration and Login
+* Post New Job Openings
+* Manage Job Listings
+* View Candidate Applications
+* Update Job Status
 
-## Notes
+### Admin Module
 
-- Resume upload is handled in `ApplyJobServlet` via Servlet `Part` API.
-- Job filtering uses dynamic SQL with `PreparedStatement`.
-- Skills are normalized through `skills` and `job_skills`.
+* Secure Admin Login
+* Manage Users and Recruiters
+* Monitor Job Posts
+* Manage Platform Activities
+
+## Technologies Used
+
+### Frontend
+
+* HTML
+* CSS
+* JavaScript
+* JSP
+
+### Backend
+
+* Java
+* Spring Boot
+* Hibernate
+* JDBC
+
+### Database
+
+* MySQL
+
+### Tools
+
+* Eclipse IDE
+* Maven
+* Git
+* GitHub
+
+## Project Structure
+
+src/main/java
+src/main/resources
+src/main/webapp
+pom.xml
+
+## Database Setup
+
+1. Create a MySQL database named `job_portal`.
+2. Update database credentials in `application.properties`.
+3. Run the application using Spring Boot.
+
+## Future Enhancements
+
+* Resume Upload and Management
+* Email Notifications
+* AI-Based Job Recommendations
+* Interview Scheduling System
+* Resume Parsing
+
+## Learning Outcomes
+
+This project provided practical experience in:
+
+* Full-Stack Web Development
+* Database Design and Management
+* Spring Boot Development
+* MVC Architecture
+* Authentication and Authorization
+* Software Development Lifecycle
+
+## Author
+
+Sripadma
